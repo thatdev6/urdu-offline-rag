@@ -11,8 +11,7 @@ from pathlib import Path
 
 import pdfplumber
 
-CORPUS_RAW = Path.home() / "Downloads/Projects/manar-prep/corpus/raw"
-CORPUS_CLEAN = Path.home() / "Downloads/Projects/manar-prep/corpus/clean"
+from config import CORPUS_RAW, CORPUS_CLEAN
 
 MIN_CHARS_PER_PAGE = 40
 

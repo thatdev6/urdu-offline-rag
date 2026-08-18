@@ -15,11 +15,9 @@ from sentence_transformers import SentenceTransformer
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
 from fahm_translate import translate_to_english  # noqa: E402
+from config import CORPUS_CHUNKS as CHUNKS_DIR, EVAL_SET_FILE, RESULTS_DIR
 
-BASE = Path.home() / "Downloads/Projects/manar-prep"
-CHUNKS_DIR = BASE / "corpus/chunks"
-EVAL_SET_FILE = BASE / "eval/eval_set.jsonl"
-RESULTS_FILE = BASE / "eval/results/fahm_arm2_comparison.json"
+RESULTS_FILE = RESULTS_DIR / "fahm_arm2_comparison.json"
 
 SEARCH_K = 20
 

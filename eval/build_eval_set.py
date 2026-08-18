@@ -7,19 +7,15 @@ Appends completed entries to eval_set.jsonl so you can stop/resume anytime.
 """
 
 import json
+import sys
 from pathlib import Path
 
 import faiss
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
-BASE = Path.home() / "Downloads/Projects/manar-prep"
-CHUNKS_DIR = BASE / "corpus/chunks"
-EVAL_DIR = BASE / "eval"
-QUERIES_FILE = EVAL_DIR / "queries_raw.txt"
-EVAL_SET_FILE = EVAL_DIR / "eval_set.jsonl"
-
-TOP_K = 12
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
+from config import CORPUS_CHUNKS as CHUNKS_DIR, EVAL_DIR, QUERIES_RAW_FILE as QUERIES_FILE, EVAL_SET_FILE, TOP_K
 
 
 def load_done_queries() -> set[str]:

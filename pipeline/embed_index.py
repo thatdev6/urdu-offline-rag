@@ -6,18 +6,11 @@ back to chunk metadata (needed since FAISS only stores vectors, not text).
 """
 
 import json
-from pathlib import Path
-
 import faiss
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
-CORPUS_CHUNKS = Path.home() / "Downloads/Projects/manar-prep/corpus/chunks"
-CHUNKS_FILE = CORPUS_CHUNKS / "chunks.jsonl"
-INDEX_FILE = CORPUS_CHUNKS / "faiss.index"
-METADATA_FILE = CORPUS_CHUNKS / "chunk_metadata.json"
-
-MODEL_NAME = "BAAI/bge-m3"
+from config import CORPUS_CHUNKS, CHUNKS_FILE, INDEX_FILE, METADATA_FILE, EMBED_MODEL_NAME as MODEL_NAME
 
 
 def load_chunks() -> list[dict]:

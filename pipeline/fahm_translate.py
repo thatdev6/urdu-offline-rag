@@ -14,7 +14,7 @@ RAG generation call).
 
 import requests
 
-LLAMA_SERVER_URL = "http://localhost:8080/v1/chat/completions"
+from config import LLAMA_SERVER_URL
 
 TRANSLATE_SYSTEM_PROMPT = (
     "Translate the following Roman Urdu (or mixed Roman Urdu/English) question "

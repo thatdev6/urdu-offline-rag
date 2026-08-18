@@ -7,10 +7,7 @@ so chunk sizes here are intentionally conservative.
 """
 
 import json
-from pathlib import Path
-
-CORPUS_CLEAN = Path.home() / "Downloads/Projects/manar-prep/corpus/clean"
-CORPUS_CHUNKS = Path.home() / "Downloads/Projects/manar-prep/corpus/chunks"
+from config import CORPUS_CLEAN, CORPUS_CHUNKS
 
 CHUNK_SIZE_WORDS = 200
 CHUNK_OVERLAP_WORDS = 40

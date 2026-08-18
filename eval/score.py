@@ -20,14 +20,11 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
 from rag import RAGPipeline  # noqa: E402
-
-BASE = Path.home() / "Downloads/Projects/manar-prep"
-EVAL_SET_FILE = BASE / "eval/eval_set.jsonl"
-RESULTS_DIR = BASE / "eval/results"
+from config import EVAL_SET_FILE, RESULTS_DIR, FACT_MATCH_THRESHOLD
 
 # Similarity threshold above which a gold fact counts as "present" in the answer.
 # Calibrate by eyeballing a few known-correct vs known-wrong pairs.
-FACT_MATCH_THRESHOLD = 0.55
+# (see FACT_MATCH_THRESHOLD in config.py)
 
 REFUSAL_MARKERS = [
     # English

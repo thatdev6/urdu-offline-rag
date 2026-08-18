@@ -16,11 +16,9 @@ from sentence_transformers import SentenceTransformer
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
 from fahm_normalize import normalize_roman_urdu  # noqa: E402
+from config import CORPUS_CHUNKS as CHUNKS_DIR, EVAL_SET_FILE, RESULTS_DIR
 
-BASE = Path.home() / "Downloads/Projects/manar-prep"
-CHUNKS_DIR = BASE / "corpus/chunks"
-EVAL_SET_FILE = BASE / "eval/eval_set.jsonl"
-RESULTS_FILE = BASE / "eval/results/fahm_comparison.json"
+RESULTS_FILE = RESULTS_DIR / "fahm_comparison.json"
 
 SEARCH_K = 20  # look deep enough to find rank even if it's not in a small top-k
 

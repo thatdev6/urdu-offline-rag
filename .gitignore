@@ -11,3 +11,5 @@ corpus/chunks/
 *.gguf
 *.safetensors
 models/
+.env.local
+.env

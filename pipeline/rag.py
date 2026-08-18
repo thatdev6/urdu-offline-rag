@@ -6,20 +6,13 @@ Requires llama-server running separately:
 """
 
 import json
-from pathlib import Path
 
 import faiss
 import numpy as np
 import requests
 from sentence_transformers import SentenceTransformer
 
-CORPUS_CHUNKS = Path.home() / "Downloads/Projects/manar-prep/corpus/chunks"
-INDEX_FILE = CORPUS_CHUNKS / "faiss.index"
-METADATA_FILE = CORPUS_CHUNKS / "chunk_metadata.json"
-
-EMBED_MODEL_NAME = "BAAI/bge-m3"
-LLAMA_SERVER_URL = "http://localhost:8080/v1/chat/completions"
-TOP_K = 8
+from config import INDEX_FILE, METADATA_FILE, EMBED_MODEL_NAME, LLAMA_SERVER_URL, TOP_K, REQUEST_TIMEOUT
 
 SYSTEM_PROMPT = (
     "You are a helpful assistant answering questions about university "
@@ -71,7 +64,7 @@ class RAGPipeline:
             "temperature": 0.3,
             "max_tokens": 200,
         }
-        resp = requests.post(LLAMA_SERVER_URL, json=payload, timeout=2400)
+        resp = requests.post(LLAMA_SERVER_URL, json=payload, timeout=REQUEST_TIMEOUT)
         resp.raise_for_status()
         data = resp.json()
         return data["choices"][0]["message"]["content"]
