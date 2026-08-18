@@ -1,0 +1,13 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# regeneratable from corpus/raw via pipeline/extract.py, chunk.py, embed_index.py
+corpus/clean/
+corpus/chunks/
+
+# model weights, never belong in git
+*.gguf
+*.safetensors
+models/

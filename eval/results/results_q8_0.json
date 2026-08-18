@@ -1,0 +1,162 @@
+{
+  "model_tag": "q8_0",
+  "n_total": 10,
+  "n_answerable": 6,
+  "n_not_answerable": 4,
+  "mean_fact_match_score": 0.4444444444444444,
+  "correct_refusal_rate": 1.0,
+  "results": [
+    {
+      "query": "Kia us din friday ki Chutti mile gi?",
+      "type": "refusal_check",
+      "correct_refusal": true,
+      "score": 1.0,
+      "answer": "No, Friday is not mentioned as a holiday in the provided context. The holidays listed are Labour Day (May 1, 2026), Eid-ul-Adha (May 26-29, 2026), and gazetted holidays. Islamic holidays are subject to moon sighting. Therefore, Friday is not a holiday as per the given information. Answer based on [Source: Academic Calender].",
+      "elapsed_sec": 214.6
+    },
+    {
+      "query": "Agr paper miss ho jae, repeat kr skte paper ko? Bjae pura semester prhne ke?",
+      "type": "fact_match",
+      "gold_facts": [
+        "Makeup exam allowed for missed exam under specific reasons (e.g. death of close relative, severe illness)",
+        "Request must be submitted within one week of the regular exam",
+        "Requires approval from teacher, HOD, and Dean/Controller of Examination"
+      ],
+      "facts_matched": [
+        false,
+        false,
+        false
+      ],
+      "fact_similarities": [
+        0.533,
+        0.533,
+        0.523
+      ],
+      "score": 0.0,
+      "answer": "Ha, agar koi paper miss ho jae toh uski repetition possible hai lekin sirf us course ka repetition kar sakte hain, na kisi pura semester ko. Yeh regulation Examination Regulations mein di gayi hai. Aik student ko ek semester mein ek course ko repeat karne ki permission milta hai aur uske liye us course ke liye prescribed per credit hour fee pay karni padti hai. Pura semester repeat nahi kiya ja sakta hai. Answer based on Examination Regulations.",
+      "elapsed_sec": 247.2
+    },
+    {
+      "query": "Fees installment me ho skti?",
+      "type": "fact_match",
+      "gold_facts": [
+        "Fee instalments of 1st semester fee is not allowed; however, instalments are allowed for coming semesters.",
+        "“Instalment Committee” shall review the instalment cases and refer to the Finance department."
+      ],
+      "facts_matched": [
+        true,
+        true
+      ],
+      "fact_similarities": [
+        0.891,
+        0.572
+      ],
+      "score": 1.0,
+      "answer": "Fees installment is allowed for semesters after the first semester. Installment for the first semester is not allowed. This information is based on the Fee_Regulations document.",
+      "elapsed_sec": 153.3
+    },
+    {
+      "query": "Bus transportation ka time kia he?",
+      "type": "refusal_check",
+      "correct_refusal": true,
+      "score": 1.0,
+      "answer": "Bus transportation time is not mentioned in the provided context.",
+      "elapsed_sec": 224.4
+    },
+    {
+      "query": "University gym fees kia he? Or timing kia he?",
+      "type": "refusal_check",
+      "correct_refusal": true,
+      "score": 1.0,
+      "answer": "I don't have that information in the provided documents.",
+      "elapsed_sec": 169.3
+    },
+    {
+      "query": "Raging ya bullying ka case kidr ho skta? And what can I do?",
+      "type": "fact_match",
+      "gold_facts": [
+        "Hazing or Raging is strictly prohibited",
+        "creates a substantial risk of causing mental or physical harm or humiliation",
+        "Discipline Committee is to act as an inquiry committee to investigate reported cases of violation of discipline"
+      ],
+      "facts_matched": [
+        false,
+        false,
+        true
+      ],
+      "fact_similarities": [
+        0.503,
+        0.51,
+        0.629
+      ],
+      "score": 0.3333333333333333,
+      "answer": "Raging ya bullying ka case student discipline committee mein ho sakta hai, especially agar is mein hazing, disorderly conduct, ya mental or physical harm ka koi risk ho. Agar aap kisi student ke saath bullying ya hazing ki baat karein, to aap uski report karein aur evidence (jaise proof ya statement) collect karein. Aap ko report karein jaise kisi teacher ya staff ke saath, jo uss case ko dekh sakta hai. Aapki report ko student discipline committee tak pahuncha dene ke baad, unhone case ko investigate karke punishment suggest kar sakta hai. Aap ko aapki point of view bhi present karni chahiye.  \n\nAnswer based on: Student_Discipline_Regulations",
+      "elapsed_sec": 236.8
+    },
+    {
+      "query": "Library fee kia he?",
+      "type": "fact_match",
+      "gold_facts": [
+        "Membership of library is only for students and employees of University",
+        "Membership granted on issuance of library membership card (University Card",
+        "Rupees Ten (Rs. 10/-) per day per book will be charged as overdue fine."
+      ],
+      "facts_matched": [
+        false,
+        false,
+        true
+      ],
+      "fact_similarities": [
+        0.503,
+        0.528,
+        0.572
+      ],
+      "score": 0.3333333333333333,
+      "answer": "Library fee is non-refundable. This information is based on the Library_Regulations document.",
+      "elapsed_sec": 348.8
+    },
+    {
+      "query": "Event krwana he class ka. Is it possible? If yes, where?",
+      "type": "fact_match",
+      "gold_facts": [
+        "Society/club must submit case to Directorate of Student Affairs",
+        "Must go through the Advisor/Mentor of the concerned society/club"
+      ],
+      "facts_matched": [
+        false,
+        false
+      ],
+      "fact_similarities": [
+        0.402,
+        0.41
+      ],
+      "score": 0.0,
+      "answer": "No, it is not possible to conduct a class outside the regular academic schedule as per the provided context. The academic calendar strictly outlines the commencement and end of classes in fall and spring semesters with specific dates. There is no mention of conducting classes outside these scheduled periods or in alternative locations. Therefore, classes are only held as per the official academic calendar.",
+      "elapsed_sec": 1086.3
+    },
+    {
+      "query": "Project funding ka kia scene hota?",
+      "type": "refusal_check",
+      "correct_refusal": true,
+      "score": 1.0,
+      "answer": "Mera diya context mein \"project funding\" ke baare mein koi information nahi hai. Isliye main koi jawab nahi de sakta.",
+      "elapsed_sec": 692.6
+    },
+    {
+      "query": "Teacher ki complaint kese ho skti? Or kaha ho skti",
+      "type": "fact_match",
+      "gold_facts": [
+        "All faculty members, administrative staff, support staff and students will be expected to monitor the observance of this code of conduct and report any such disregard or violations to relevant University authorities for taking appropriate action/remedial measures"
+      ],
+      "facts_matched": [
+        true
+      ],
+      "fact_similarities": [
+        0.558
+      ],
+      "score": 1.0,
+      "answer": "Teacher ki complaint student ke against ho sakti hai aur uski complaint Student Discipline Committee ya Departmental Committee ke through kari jati hai. Agar teacher ko student ke against koi indiscipline ki baat milti hai to woh us case ko Student Discipline Committee ya President Student Discipline Committee ke pase refer kar sakti hai. Agar case serious hai to Student Discipline Committee ko case investigate karna padta hai. Teacher normally complainant bana ke evidence present karega.  \n\nYeh information Student_Discipline_Regulations document se milti hai.",
+      "elapsed_sec": 189.2
+    }
+  ]
+}

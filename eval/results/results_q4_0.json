@@ -1,0 +1,162 @@
+{
+  "model_tag": "q4_0",
+  "n_total": 10,
+  "n_answerable": 6,
+  "n_not_answerable": 4,
+  "mean_fact_match_score": 0.5555555555555556,
+  "correct_refusal_rate": 0.75,
+  "results": [
+    {
+      "query": "Kia us din friday ki Chutti mile gi?",
+      "type": "refusal_check",
+      "correct_refusal": false,
+      "score": 0.0,
+      "answer": "Nahi, Friday ki chutti nahi milegi. University ke gazetted holidays aur Islamic holidays ke according chutti milti hai, aur Friday ko koi special holiday nahi diya gaya hai. You have to check the academic calendar for specific holidays. Based on the provided documents, no mention of Friday being a holiday.",
+      "elapsed_sec": 252.5
+    },
+    {
+      "query": "Agr paper miss ho jae, repeat kr skte paper ko? Bjae pura semester prhne ke?",
+      "type": "fact_match",
+      "gold_facts": [
+        "Makeup exam allowed for missed exam under specific reasons (e.g. death of close relative, severe illness)",
+        "Request must be submitted within one week of the regular exam",
+        "Requires approval from teacher, HOD, and Dean/Controller of Examination"
+      ],
+      "facts_matched": [
+        false,
+        false,
+        false
+      ],
+      "fact_similarities": [
+        0.495,
+        0.538,
+        0.526
+      ],
+      "score": 0.0,
+      "answer": "Ha, agar ek paper miss ho jae to student repeat kr skta hai us paper ko. Yeh repeat karna semester ke andar ho sakta hai, lekin sirf us course ke liye jo student ko improve karna chahte hain. Yeh repeat karna semester ke maximum credit hour limit ke andar ho sakta hai aur student ko prescribed per credit hour fee pay karni padegi.  \n\nIs information ko Examination Regulations document se liya gaya hai.",
+      "elapsed_sec": 287.5
+    },
+    {
+      "query": "Fees installment me ho skti?",
+      "type": "fact_match",
+      "gold_facts": [
+        "Fee instalments of 1st semester fee is not allowed; however, instalments are allowed for coming semesters.",
+        "“Instalment Committee” shall review the instalment cases and refer to the Finance department."
+      ],
+      "facts_matched": [
+        true,
+        true
+      ],
+      "fact_similarities": [
+        0.829,
+        0.562
+      ],
+      "score": 1.0,
+      "answer": "Fees installment me ho skti hai, lekin 1st semester ke liye installment nahi diya jata. Baki semesters ke liye installment allowed hai.  \n\nDocument: Fee_Regulations",
+      "elapsed_sec": 186.2
+    },
+    {
+      "query": "Bus transportation ka time kia he?",
+      "type": "refusal_check",
+      "correct_refusal": true,
+      "score": 1.0,
+      "answer": "Bus transportation time ka koi information nahi di gayi hai. You may need to refer to another document or source for such details.",
+      "elapsed_sec": 270.1
+    },
+    {
+      "query": "University gym fees kia he? Or timing kia he?",
+      "type": "refusal_check",
+      "correct_refusal": true,
+      "score": 1.0,
+      "answer": "I don't have that information.",
+      "elapsed_sec": 192.4
+    },
+    {
+      "query": "Raging ya bullying ka case kidr ho skta? And what can I do?",
+      "type": "fact_match",
+      "gold_facts": [
+        "Hazing or Raging is strictly prohibited",
+        "creates a substantial risk of causing mental or physical harm or humiliation",
+        "Discipline Committee is to act as an inquiry committee to investigate reported cases of violation of discipline"
+      ],
+      "facts_matched": [
+        false,
+        false,
+        true
+      ],
+      "fact_similarities": [
+        0.504,
+        0.441,
+        0.658
+      ],
+      "score": 0.3333333333333333,
+      "answer": "Raging ya bullying ka case student discipline committee ka under ho sakta hai. Agar koi student kisi student ya staff ko hazing ya disorderly conduct mein involve kare, to us case ko student discipline committee tak refer kiya jata hai. \n\nAgar aap apni taraf se kisi student ya staff ko hazing ya bullying ke liye complain karna chahte hain, to aap us case ko immediately report karein aur relevant evidence (jaise proof, witness statements) collect karein. Aap apne point of view present karein aur committee ko full opportunity dene ke baad punishment recommend karein. \n\nYeh information Student_Discipline_Regulations document se li gayi hai.",
+      "elapsed_sec": 257.4
+    },
+    {
+      "query": "Library fee kia he?",
+      "type": "fact_match",
+      "gold_facts": [
+        "Membership of library is only for students and employees of University",
+        "Membership granted on issuance of library membership card (University Card",
+        "Rupees Ten (Rs. 10/-) per day per book will be charged as overdue fine."
+      ],
+      "facts_matched": [
+        true,
+        true,
+        true
+      ],
+      "fact_similarities": [
+        0.601,
+        0.552,
+        0.599
+      ],
+      "score": 1.0,
+      "answer": "Library fee is non-refundable.",
+      "elapsed_sec": 220.4
+    },
+    {
+      "query": "Event krwana he class ka. Is it possible? If yes, where?",
+      "type": "fact_match",
+      "gold_facts": [
+        "Society/club must submit case to Directorate of Student Affairs",
+        "Must go through the Advisor/Mentor of the concerned society/club"
+      ],
+      "facts_matched": [
+        false,
+        false
+      ],
+      "fact_similarities": [
+        0.412,
+        0.443
+      ],
+      "score": 0.0,
+      "answer": "You don't have that information in the provided context.",
+      "elapsed_sec": 181.6
+    },
+    {
+      "query": "Project funding ka kia scene hota?",
+      "type": "refusal_check",
+      "correct_refusal": true,
+      "score": 1.0,
+      "answer": "I don't have that information in the provided context.",
+      "elapsed_sec": 233.0
+    },
+    {
+      "query": "Teacher ki complaint kese ho skti? Or kaha ho skti",
+      "type": "fact_match",
+      "gold_facts": [
+        "All faculty members, administrative staff, support staff and students will be expected to monitor the observance of this code of conduct and report any such disregard or violations to relevant University authorities for taking appropriate action/remedial measures"
+      ],
+      "facts_matched": [
+        true
+      ],
+      "fact_similarities": [
+        0.56
+      ],
+      "score": 1.0,
+      "answer": "Teacher ki complaint kisi bhi act of indiscipline ya unki teaching mein galti ke baare mein ho sakti hai. Agar koi teacher ko galti ya breach of discipline ke liye complaint kiya jaye to wo case Student Discipline Committee tak refer kar sakti hai. Agar case serious hai to teacher ko Student Discipline Committee ke saamne aur evidence present karna padega.  \n\nYeh information Student_Discipline_Regulations document se li gayi hai.",
+      "elapsed_sec": 261.9
+    }
+  ]
+}

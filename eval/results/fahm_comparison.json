@@ -1,0 +1,62 @@
+[
+  {
+    "query": "Agr paper miss ho jae, repeat kr skte paper ko? Bjae pura semester prhne ke?",
+    "normalized": "agar paper miss ho jae, repeat kar skte paper ko? Bjae pura semester prhne ke?",
+    "text_changed": true,
+    "raw_rank": null,
+    "raw_score": null,
+    "normalized_rank": null,
+    "normalized_score": null,
+    "improved": false
+  },
+  {
+    "query": "Fees installment me ho skti?",
+    "normalized": "Fees installment me ho sakti?",
+    "text_changed": true,
+    "raw_rank": 1,
+    "raw_score": 0.561,
+    "normalized_rank": 1,
+    "normalized_score": 0.574,
+    "improved": false
+  },
+  {
+    "query": "Raging ya bullying ka case kidr ho skta? And what can I do?",
+    "normalized": "Raging ya bullying ka case kahan ho sakta? And what can I do?",
+    "text_changed": true,
+    "raw_rank": 1,
+    "raw_score": 0.526,
+    "normalized_rank": 2,
+    "normalized_score": 0.531,
+    "improved": false
+  },
+  {
+    "query": "Library fee kia he?",
+    "normalized": "Library fee kya hai?",
+    "text_changed": true,
+    "raw_rank": 1,
+    "raw_score": 0.684,
+    "normalized_rank": 1,
+    "normalized_score": 0.68,
+    "improved": false
+  },
+  {
+    "query": "Event krwana he class ka. Is it possible? If yes, where?",
+    "normalized": "Event krwana hai class ka. Is it possible? If yes, where?",
+    "text_changed": true,
+    "raw_rank": null,
+    "raw_score": null,
+    "normalized_rank": null,
+    "normalized_score": null,
+    "improved": false
+  },
+  {
+    "query": "Teacher ki complaint kese ho skti? Or kaha ho skti",
+    "normalized": "Teacher ki complaint kaise ho sakti? Or kahan ho sakti",
+    "text_changed": true,
+    "raw_rank": 1,
+    "raw_score": 0.584,
+    "normalized_rank": 2,
+    "normalized_score": 0.524,
+    "improved": false
+  }
+]

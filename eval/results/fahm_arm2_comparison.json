@@ -1,0 +1,56 @@
+[
+  {
+    "query": "Agr paper miss ho jae, repeat kr skte paper ko? Bjae pura semester prhne ke?",
+    "translated": "If the paper is missed, can we repeat the paper? Can we carry forward the entire semester?",
+    "raw_rank": null,
+    "raw_score": null,
+    "translated_rank": 20,
+    "translated_score": 0.553,
+    "improved": true
+  },
+  {
+    "query": "Fees installment me ho skti?",
+    "translated": "Can fees be paid in installments?",
+    "raw_rank": 1,
+    "raw_score": 0.561,
+    "translated_rank": 1,
+    "translated_score": 0.645,
+    "improved": false
+  },
+  {
+    "query": "Raging ya bullying ka case kidr ho skta? And what can I do?",
+    "translated": "In what situation can a case of aggression or bullying be filed? And what can I do?",
+    "raw_rank": 1,
+    "raw_score": 0.526,
+    "translated_rank": 2,
+    "translated_score": 0.561,
+    "improved": false
+  },
+  {
+    "query": "Library fee kia he?",
+    "translated": "What is a library fee?",
+    "raw_rank": 1,
+    "raw_score": 0.684,
+    "translated_rank": 1,
+    "translated_score": 0.7,
+    "improved": false
+  },
+  {
+    "query": "Event krwana he class ka. Is it possible? If yes, where?",
+    "translated": "Can a class event be organized? If yes, where?",
+    "raw_rank": null,
+    "raw_score": null,
+    "translated_rank": null,
+    "translated_score": null,
+    "improved": false
+  },
+  {
+    "query": "Teacher ki complaint kese ho skti? Or kaha ho skti",
+    "translated": "How can a teacher's complaint arise? And where can it arise?",
+    "raw_rank": 1,
+    "raw_score": 0.584,
+    "translated_rank": 2,
+    "translated_score": 0.566,
+    "improved": false
+  }
+]
