@@ -77,7 +77,7 @@ Across four quantization levels of the same model, generation quality on a small
 
 - `pipeline/` — extraction, chunking, embedding, retrieval, and generation code
 - `eval/` — the evaluation set, scoring harness, and the two FAHM comparison scripts
-- `corpus/` — source PDFs and processed text (raw and cleaned documents are not included in the repo; see .gitignore)
+- `corpus/` — source PDFs and processed text
 - `FINDINGS.md` — the detailed results and reasoning behind them
 - `LIMITATIONS.md` — what this project does not cover and why
 - `WALKTHROUGH.md` — a full account of the process, including the mistakes
