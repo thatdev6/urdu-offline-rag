@@ -26,6 +26,14 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir --extra-index-url https://download.pytorch.org/whl/cpu \
     -r requirements.txt
 
+ARG HF_MODEL_REPO=alchemistVI/urdu-offline-rag-qwen3-4b-gguf
+ENV HF_MODEL_REPO=${HF_MODEL_REPO}
+
+RUN mkdir -p /app/models/gguf && \
+    python -c "from huggingface_hub import hf_hub_download; hf_hub_download(repo_id='${HF_MODEL_REPO}', filename='qwen3-4b-q4_k_m.gguf', local_dir='/app/models/gguf')"
+
+RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('BAAI/bge-m3')"
+
 COPY pipeline/ ./pipeline/
 COPY corpus/chunks/ ./corpus/chunks/
 COPY app.py .
