@@ -3,6 +3,9 @@ import sys
 
 import gradio as gr
 
+import gradio.networking as _gr_networking
+_gr_networking.url_ok = lambda url: True
+
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "pipeline"))
 from rag import RAGPipeline  # noqa: E402
 
