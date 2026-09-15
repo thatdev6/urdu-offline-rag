@@ -18,7 +18,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-COPY --from=builder /build/llama.cpp/build/bin/llama-server /usr/local/bin/llama-server
+RUN mkdir -p /opt/llama.cpp/bin
+COPY --from=builder /build/llama.cpp/build/bin/ /opt/llama.cpp/bin/
+ENV LD_LIBRARY_PATH=/opt/llama.cpp/bin:${LD_LIBRARY_PATH}
+ENV PATH=/opt/llama.cpp/bin:${PATH}
 
 WORKDIR /app
 
@@ -33,6 +36,9 @@ RUN mkdir -p /app/models/gguf && \
     python -c "from huggingface_hub import hf_hub_download; hf_hub_download(repo_id='${HF_MODEL_REPO}', filename='qwen3-4b-q4_k_m.gguf', local_dir='/app/models/gguf')"
 
 RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('BAAI/bge-m3')"
+
+ENV HF_HUB_OFFLINE=1
+ENV TRANSFORMERS_OFFLINE=1
 
 COPY pipeline/ ./pipeline/
 COPY corpus/chunks/ ./corpus/chunks/
