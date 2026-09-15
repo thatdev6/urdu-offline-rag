@@ -15,7 +15,7 @@ RUN cmake -B build -DCMAKE_BUILD_TYPE=Release -DGGML_NATIVE=OFF \
 FROM python:3.12-slim
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl \
+    curl libgomp1 \
     && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /opt/llama.cpp/bin
